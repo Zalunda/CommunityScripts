@@ -1,0 +1,30 @@
+name: "Scene Merger"
+description: "Merges scenes with the same StashDB ID if their files are in the same folder."
+version: "1.8"
+exec:
+  - python
+  - "{pluginDir}/sceneMerger.py"
+interface: raw
+
+settings:
+  AllowAutoMerge:
+    displayName: "Allow automatic merge in the background after a Scene is Updated/Identified"
+    type: BOOLEAN
+
+tasks:
+  - name: "Run AutoMerge (DRY RUN)"
+    description: "Logs what would be merged. Does not alter the database."
+    defaultArgs:
+      mode: manual_dry_run
+  - name: "Run AutoMerge (EXECUTE)"
+    description: "Actually performs the merge operations."
+    defaultArgs:
+      mode: manual_execute
+
+hooks:
+  - name: "AutoMerge on Scene Update"
+    description: "Runs automatically when a scene is identified."
+    triggeredBy:
+      - Scene.Update.Post
+    defaultArgs:
+      mode: hook
