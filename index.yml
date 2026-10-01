@@ -8,4 +8,4 @@
   requires:
     - stashapi
   zipPaths:
-    - https://raw.githubusercontent.com/Zalunda/CommunityScripts/main/plugins/sceneMerger/sceneMerger.zip
+    - https://github.com/Zalunda/CommunityScripts/raw/main/plugins/sceneMerger/sceneMerger.zip
