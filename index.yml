@@ -1,0 +1,11 @@
+- id: sceneMerger
+  name: Scene Merger
+  type: plugin
+  version: "1.0"
+  description: "Merges duplicate scenes that share the same StashDB ID."
+  authors:
+    - Zalunda
+  requires:
+    - stashapi
+  zipPaths:
+    - https://raw.githubusercontent.com/Zalunda/CommunityScripts/main/plugins/sceneMerger/sceneMerger.zip
