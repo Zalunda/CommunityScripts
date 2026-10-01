@@ -5,5 +5,5 @@
   description: "Merges duplicate scenes that share the same StashDB ID."
   authors:
     - Zalunda
-  zipPaths:
+  path:
     - https://github.com/Zalunda/CommunityScripts/raw/main/plugins/sceneMerger/sceneMerger.zip
