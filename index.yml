@@ -1,9 +1,8 @@
 - id: sceneMerger
   name: Scene Merger
-  type: plugin
-  version: "1.0"
-  description: "Merges duplicate scenes that share the same StashDB ID."
-  authors:
-    - Zalunda
-  path:
-    - sceneMerger.zip
+  metadata:
+    description: "Merges duplicate scenes that share the same StashDB ID."
+  version: 1.0
+  date: 2026-10-01 18:17:00
+  path: sceneMerger.zip
+  sha256: 68543D2222B97FF1F8BE3CE92AFB2DD2C2B7B5AD1085F31E18CAEB26F900D3FC
